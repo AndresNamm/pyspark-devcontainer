@@ -9,6 +9,7 @@
     "customizations": {
         "vscode" : {
             "settings": {
+                "python.defaultInterpreterPath": "/opt/conda/bin/python",
                 "terminal.integrated.profiles.linux": {
                     "bash": {
                         "path": "/bin/bash"
