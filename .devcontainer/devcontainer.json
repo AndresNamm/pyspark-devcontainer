@@ -6,6 +6,7 @@
     "remoteEnv": {
         "PYTHONPATH": "${containerEnv:SPARK_HOME}/python:${containerEnv:SPARK_HOME}/python/build:${containerEnv:SPARK_HOME}/python/lib/py4j-0.10.9.7-src.zip:${containerEnv:PYTHONPATH}"
     },
+    "postStartCommand": "./start.sh",
     "customizations": {
         "vscode" : {
             "settings": {
