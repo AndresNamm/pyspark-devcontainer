@@ -3,7 +3,9 @@
 	"dockerComposeFile": ["./docker-compose.yaml"],
     "service": "spark",
     "workspaceFolder": "/home/jovyan/code",
-
+    "remoteEnv": {
+        "PYTHONPATH": "${containerEnv:SPARK_HOME}/python:${containerEnv:SPARK_HOME}/python/build:${containerEnv:SPARK_HOME}/python/lib/py4j-0.10.9.7-src.zip:${containerEnv:PYTHONPATH}"
+    },
     "customizations": {
         "vscode" : {
             "settings": {
@@ -17,7 +19,7 @@
                 "python.linting.pylintEnabled": true
             },
             "extensions": [
-                "ms-python.python"
+                "ms-python.python", "ms-toolsai.jupyter"
             ]
         }
     }
